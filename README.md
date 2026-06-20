@@ -28,7 +28,7 @@ Once the installation is complete, you can run `installer.exe` again whenever yo
 ***
 >[!Note]
 >### Installation using Python instead of installer.exe
->1. Clone the repository:
+>1. Clone the repository or download it:
 >``` bash
 >git clone https://github.com/recuer0/MCServer.git
 >cd MCServer
