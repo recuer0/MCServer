@@ -8,7 +8,6 @@ if not os.path.exists("server"):
     os.mkdir('server')
 
 def delete_all(save_jar=False):
-    os.chdir("..")
     for file in os.listdir('server'):
         if os.path.isfile(f'server/{file}'):
             if save_jar:
@@ -16,7 +15,7 @@ def delete_all(save_jar=False):
         else:
             shutil.rmtree(f'server/{file}')
 
-def init_status():  
+def init_status():
     global pre_server_files
     global server_files
     
