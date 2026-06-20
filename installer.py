@@ -149,8 +149,19 @@ if __name__ == '__main__':
                 print(f"\n{AMARILLO}[+]{RESET} Estado actual: {ROJO}no descargado{RESET}")
                 download(downloader)
                 installer = Installer(version=downloader.version)
-                install(installer)
-                create(installer)
+                
+                install_opt = ""
+                
+                while not install_opt:
+                    install_opt = input(f"\n{RESET}[+] ¿Desea continuar al proceso de {AZUL}instalación{RESET}? {MAGENTA}(Y/n){RESET}: ").strip()
+                    
+                    if not install_opt or install_opt.lower() == "y":
+                        install(installer)
+                        create(installer)
+                    elif install_opt.lower() == "n":
+                        def_handler(None,None)
+                    else:
+                        install_opt = ""
                 
             case "downloaded":
                 print(f"\n{AMARILLO}[+]{RESET} Estado actual: {AZUL}descargado pero no instalado{RESET}")
