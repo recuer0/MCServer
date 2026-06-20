@@ -20,12 +20,14 @@ Or, download the project's ZIP file, open it in your file explorer, and run inst
 - Java must be installed to set up the server --> [Java 25 Downloads](https://www.oracle.com/java/technologies/javase/jdk25-archive-downloads.html)
 - NodeJS must be installed to use the dashboard (GUI) --> [NodeJS Downloads](https://nodejs.org/es/download/current)
 
->[!Note] Supported versions of the installer
->The installer only supports **standard server versions (1.16, 1.18.1, 1.21, 26.2, etc.)**. If you want to use a snapshot (26.2-snapshot-8), pre, or rc version, download it manually and copy it to the `MCServer/server/` directory.
+> [!Note]
+>### Supported versions of the installer
+> The installer only supports **standard server versions (1.16, 1.18.1, 1.21, 26.2, etc.)**. If you want to use a snapshot (26.2-snapshot-8), pre, or rc version, download it manually and copy it to the `MCServer/server/` directory.
 
 Once the installation is complete, you can run `installer.exe` again whenever you want to open the graphical interface.
 ***
->[!Note] Installation using Python instead of installer.exe
+>[!Note]
+>### Installation using Python instead of installer.exe
 >1. Clone the repository:
 >``` bash
 >git clone https://github.com/recuer0/MCServer.git
