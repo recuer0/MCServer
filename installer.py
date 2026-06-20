@@ -3,7 +3,7 @@ import signal
 import sys
 import time
 
-from downloader import Downloader,Installer
+from python_modules.downloader import Downloader,Installer
 
 java_url = "https://www.oracle.com/java/technologies/javase/jdk25-archive-downloads.html"
 node_url = "https://nodejs.org/es/download/current"

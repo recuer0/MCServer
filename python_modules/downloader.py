@@ -7,7 +7,7 @@ import signal
 import subprocess
 import sys
 
-from status import init_status,delete_all
+from python_modules.status import init_status,delete_all
 from tqdm import tqdm
 
 NEGRO = "\033[30m"
